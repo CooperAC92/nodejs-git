@@ -60,6 +60,13 @@ app.get('/bad', (req, res) => {
 	});
 });
 
+//HTTP Request - /Bad page - JSON Obj
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		pageTitle: 'Projects'
+	});
+});
+
 //port to listen to for local connection
 app.listen(port, () =>{
 	console.log(`Server running on port ${port}`);
